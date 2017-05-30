@@ -3,14 +3,13 @@ Linux Commands
 
 
 ### Find out what linux version
-`$ cat /etc/redhat-release`
-
-`> Red Hat Enterprise Linux Server release 7.2 (Maipo)`
-
+```
+$ cat /etc/redhat-release
+> Red Hat Enterprise Linux Server release 7.2 (Maipo)
+```
 
 ### Install PHP 7 on CentOS / RHEL 6.8 and 7.3 via Yum
 source:
-
 https://webtatic.com/packages/php70/
 
 https://webtatic.com/packages/php71/
@@ -19,7 +18,7 @@ https://webtatic.com/packages/php71/
 First we need to add Webtatic EL yum repository information to our corresponding
 CentOS/RHEL version to Yum..
 ```
-$ rpm -Uvh Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+$ rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 $ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 ```
 
