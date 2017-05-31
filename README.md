@@ -8,6 +8,7 @@ A way for me to learn how to administrate a linux system.
 * [Good reads](#good-read-about-linux-users-and-group-commands)
 * [Find out linux version](#find-out-what-linux-version)
 * [Install PHP 7 on CentOS / RHEL 6.8 and 7.3 via Yum](#install-php-7-on-centos--rhel-68-and-73-via-yum)
+* [Set up Jenkins with GitHub](#set-up-jenkins-with-github)
 * [Yum commands](#yum-commands)
 * [User commands](#user-commands)
     * [List users](#list)
