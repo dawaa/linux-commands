@@ -1,6 +1,7 @@
 Linux Commands
 =======================
 
+https://www.linode.com/docs/tools-reference/linux-users-and-groups/
 
 ### Find out what linux version
 ```
@@ -36,4 +37,43 @@ $ yum install php70w-fpm php70w-opcache
 ```
 $ yum install yum-plugin-replace
 $ yum replace php-common --replace-with=php70w-common
+```
+
+### Yum commands
+List installed packages
+```
+$ yum list installed
+```
+
+### User commands
+#### List
+```
+# Lists all users
+$ cut -d: -f1 /etc/passwd
+```
+
+#### Add
+```
+# Create new user
+$ useradd <username>
+
+# Create new user with group
+$ useradd -g <group> <username>
+```
+
+#### Remove
+```
+# Remove all groups from a user
+$ usermod -G "" <name>
+
+# Remove user
+$ userdel <name>
+
+# Remove user and their home folder and their files
+$ userdel -r <name>
+```
+
+#### Switch
+```
+$ su - <username>
 ```
