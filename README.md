@@ -1,6 +1,22 @@
-Linux Commands
+Mastering Linux Commands
 =======================
 
+# Introduction
+A way for me to learn how to administrate a linux system.
+
+# Table of Contents
+* [Good reads](#good-read-about-linux-users-and-group-commands)
+* [Find out linux version](#find-out-what-linux-version)
+* [Install PHP 7 on CentOS / RHEL 6.8 and 7.3 via Yum](#install-php-7-on-centos--rhel-68-and-73-via-yum)
+* [Yum commands](#yum-commands)
+* [User commands](#user-commands)
+    * [List users](#list)
+    * [Add user](#add)
+    * [Remove user](#remove)
+    * [Switch user](#switch)
+
+
+### Good read about Linux users and group commands
 https://www.linode.com/docs/tools-reference/linux-users-and-groups/
 
 ### Find out what linux version
@@ -38,6 +54,16 @@ $ yum install php70w-fpm php70w-opcache
 $ yum install yum-plugin-replace
 $ yum replace php-common --replace-with=php70w-common
 ```
+
+### Set up Jenkins with GitHub
+After following install instructions here https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions
+
+I had to make sure that the user `jenkins` in its home dir, which should be
+`/var/lib/jenkins/` had directory `.ssh` in it with `id_rsa`, `id_rsa.pub` and
+especially `known_hosts` with github.com in it, otherwise it couldn't recognize
+the url
+
+
 
 ### Yum commands
 List installed packages
