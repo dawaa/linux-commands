@@ -15,6 +15,7 @@ A way for me to learn how to administrate a linux system.
     * [Add user](#add)
     * [Remove user](#remove)
     * [Switch user](#switch)
+* [Database import](#database-import)
 
 
 ### Good read about Linux users and group commands
@@ -103,4 +104,9 @@ $ userdel -r <name>
 #### Switch
 ```
 $ su - <username>
+```
+
+### Database import
+```
+$ gunzip < filename.sql.gz | mysql -u <username> [-p] <databases>
 ```
